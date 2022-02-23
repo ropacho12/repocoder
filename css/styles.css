@@ -1,0 +1,677 @@
+@font-face {
+    font-family: "comforta";
+    src: url(../Comfortaa-VariableFont_wght.ttf);
+
+}
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin: 0;
+    
+    
+    font-family: "comforta";
+}
+
+body{
+    background-color:#13315C;
+
+}
+
+header{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+   
+    
+
+    border-bottom: 3px solid rgb(62, 92, 245); 
+  
+
+}
+.title{
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.heroImg{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-title{
+
+    
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style-type: none;
+    padding: 15px;
+}
+ 
+a{
+    
+    padding: 10px;
+    margin: 15px;
+    color:white;
+}
+
+a:hover{
+    color:rgb(5, 197, 69);
+}
+h1{
+    
+    color: white;
+}
+
+/*************************hero***************************************/
+.banner{
+    background:linear-gradient(rgba(140, 141, 141, 0.479),rgba(193, 194, 197, 0.3)),
+     url(../IMG/hero.jpg);
+    
+    
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding-left: 40px;
+    
+}
+
+.banner::after {
+content: "";
+}
+
+.banner_title{
+    background-color:transparent;
+    color:#13315C;
+    font-size: 5rem;
+    text-align: center;
+    position:relative;
+   /* border: 2px solid rgb(10, 3, 3);*/
+    
+    animation: tituloHero;
+    animation-duration: 3s;
+    animation-iteration-count:2;
+    animation-delay: 1s;
+   
+    
+}
+.title-responsive{
+    display: none;
+}
+@keyframes tituloHero{
+    
+    0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes tituloHero {
+      0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    
+/*************************boostrap- card*******************************************************/
+
+
+
+.container{
+    padding: 32px;
+    
+}
+
+/********************************************************/
+
+.seccion{
+    background-color: aliceblue;
+    color:#13315C;
+    font-size: 1.2rem;
+    height: 50%;
+    padding: 32px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.seccion-img{
+  width: 300px;
+  height: 300px;
+
+}
+
+
+
+.seccion-img{
+    background-color:rgb(235, 233, 233);
+    border-radius: 50%;
+    border: 4px solid rgb(62, 92, 245);
+
+    
+   width: 150px;
+   height: 150px;
+   
+}
+
+.seccion-p{
+    padding: 15px;
+}
+.seccion-p:hover{
+    color: rgb(5, 197, 69);
+}
+.seccion-img:hover{
+    border: 5px solid rgb(5, 197, 69);
+
+}
+
+.seccion-responsive{
+    display: none;
+}
+/******************************************************************/
+.video{
+    
+    color:rgb(62, 92, 245) ;
+    border-top: 3px solid rgb(62, 92, 245);
+    padding: 8px;
+    margin: 10px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+    font-size: 2rem;
+}
+.video-title{
+    
+    padding: 20px;
+    margin: 15px;
+}
+/********************************footer****************************************/
+footer{
+    
+    font-size: 20px;
+
+    color:rgb(62, 92, 245);
+    border-top: 3px solid rgb(62, 92, 245);
+    height: 350px;
+
+
+    padding: 15px;
+    text-align: center;
+}
+
+.iconosFooter { 
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+    list-style-type: none;
+}
+
+.link, i {
+    text-decoration: none;
+
+
+margin: 10px;
+}
+/***************medias querys************************************/
+
+@media all  and (max-width: 480px){
+   body{
+    background-color:#16488d;
+    
+ }
+
+ .title{
+    background-color:#5c5b13;
+    width: 100%;
+    align-items:center;
+ }
+ .title-responsive{
+     
+     opacity: 0.9;
+     text-align: center;
+     font-size: 2rem;
+ }
+
+ header, .nav-title{ 
+     background-color: #16488d;
+     color: #222;
+     width:100%;
+     height: 100%;
+     
+     
+
+
+     display:flex;
+     justify-content:flex-start;
+     align-items:center;
+     flex-wrap: wrap;
+ }
+ 
+.nav-title{
+    display:block;
+    margin: 16px;
+    
+    
+    
+}
+li a{
+    color: white;
+    padding: 15px;
+    margin: 15px;
+
+    text-decoration: none;
+
+}
+
+li a:hover{
+    color: grey;
+
+}
+
+
+.banner{
+    width: 100vw;
+    height: 100vw;
+}
+.banner_title{
+    display: none;
+    
+}
+.title-responsive{
+color: white;
+font-size: 3.5rem;
+text-align: center;
+
+
+display:block;
+
+
+}
+.seccion{
+    display: none;
+}
+
+.seccion-responsive{
+    
+    color: #dfe0e2;
+    width: 80%;
+    height:80% ;
+
+    display:block;
+  /*no se si es buena practica ponerle block. pero no puedo centrar la img*/
+
+  
+}
+.seccion-responsive-p{
+    
+    color: white;
+    padding: 32px;
+    line-height: 32px;
+    width: 100wp;
+    font-size: 1rem;
+    
+}
+.seccion-responsive-img{
+    
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid rgb(62, 92, 245);
+    text-align: center;
+
+    
+   width: 150px;
+   height: 150px;
+   }
+   .video{
+       width:80%;
+       height: 80%;
+       
+   }
+   inframe{
+    width: 50%;
+    height: 50%;
+}
+footer{
+    background-color: rgb(231, 226, 226);
+    height: 100%;
+}
+.footerTitulo{
+    color: #16488d;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+}
+.iconosFooter a{
+    color: darkblue;
+    padding: 16px;
+    margin: 16px;
+
+}
+
+}
+
+
+/************************************NOSOTROS -grid.*********************/
+  .hero-n{
+    
+    background: url(../IMG/aaaaa.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-n::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+   background-color: rgb(110, 211, 241);
+    opacity: 0.5;
+}
+.hero-info{
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+ 
+    margin: auto;
+}
+.hero-title{
+    line-height: 1.5;
+    font-size: 3em;
+    color: rgb(17, 17, 17);
+}
+.hero-p{
+    line-height: 2;
+    font-size: 1em;
+    color: black;
+}
+.parrafo-nos{
+    background-color:#13315C;
+    color: white;
+    padding: 32px;
+}
+.historia-t{
+    text-align: center;
+    background-color:rgb(230, 220, 220);
+    text-align: center;
+    padding: 32px;
+}
+.contenedor-grid{
+    
+    padding: 32px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px ;
+
+
+}
+
+.img-grid{
+        width: 100%;
+        height: 100%;
+        
+}
+.galeria-grid{
+    
+    position: relative;
+
+}
+.title-img{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(255,255,255, 0.8));
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+
+}
+.title-grid{
+    color: aliceblue;
+    text-align: center;
+}
+.galeria-grid:hover{
+    background-color:white ;
+    
+    opacity:0.6;
+}
+
+/***************medias querys-nosotros************************************/
+
+@media all  and (max-width: 480px){
+    body{
+     background-color:#16488d;
+     
+  }
+ 
+  .title{
+     background-color:#13315C;
+     width: 100%;
+     align-items:center;
+  }
+  .title-responsive{
+      
+      opacity: 0.9;
+      text-align: center;
+      font-size: 2rem;
+  }
+ 
+  header, .nav-title{ 
+      background-color: #16488d;
+      color: #222;
+      width:100%;
+      height: 100%;
+      
+      
+ 
+ 
+      display:flex;
+      justify-content:flex-start;
+      align-items:center;
+      flex-wrap: wrap;
+  }
+  
+ .nav-title{
+     display:block;
+     margin: 16px;
+     
+     
+     
+ }
+ li a{
+     color: white;
+     padding: 15px;
+     margin: 15px;
+ 
+     text-decoration: none;
+ 
+ }
+ 
+ li a:hover{
+     color: grey;
+ 
+ }
+ .hero-info{
+      
+     width: 60%;
+ }
+ .parrafo-nos{
+     background-color: #16488d;
+     line-height: 20px;
+      
+     
+    }
+
+    .contenedor-grid{
+        
+
+         
+    padding: 32px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px ;
+    }
+    
+    footer{
+    background-color: rgb(231, 226, 226);
+    height: 100%;
+}
+.footerTitulo{
+    color: #16488d;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+} 
+
+/****************************************SERVICIOS*******************/
+.servicios-cards{
+    
+    color: rgb(62, 92, 245);
+    height:70vh ;
+    padding: 32px;
+
+    text-align: center;
+    
+    
+    
+   
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.card-s{
+    background-color: black;
+    border: 2px solid rgb(62, 92, 245)  ;
+
+    display:block;
+    align-items: center;
+    justify-content:space-between;
+
+    
+}
+
+
+
+
+.icon-s{
+    background-color: white;
+    border-radius: 70%;
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+    margin: 10px ;
+    /*margin-left: 10px;*/
+}
+
+
+.footerTitulo{
+    height: 50px;
+  
+}
+
+/**********************************contactos**********************/
+.body-contac{
+    background-image: url(../IMG/gggggg.jpg);
+    background-size: cover;
+    background-position: 0 0, 10px 10px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+
+}
+
+/*formulario*/
+.flex-container{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:50px 30px;    
+    
+}
+
+.form{
+    background-color: rgb(128, 127, 127);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid rgb(62, 92, 245);
+    min-width: 400px;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+
+.form_input {
+    background-color: transparent;
+    color: rgb(255, 251, 251);
+    font-size:1rem ;
+    border: none;
+    
+    width: 100%;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(62, 92, 245) ;
+}
+.form_input:focus{
+    /*no me toma el gradient en los form*/
+    background:linear-gradient(to, botton, transparent, #222);
+    color: rgb(233, 233, 233);
+    outline: none;
+    border-bottom:3px solid rgb(130, 240, 111)  ;
+}
+
+
+
+
+.form_s{
+    background-color:rgb(62, 92, 245) ;
+    border-radius: 20px 20px;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.title--c{
+    color: rgb(62, 92, 245) ;
+    text-align: center;
+    font-size: 3rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*tampoco me toma los estilos en el textstarea*/
