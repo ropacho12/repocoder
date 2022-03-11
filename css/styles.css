@@ -5,9 +5,7 @@
 }
 
 *{
-    box-sizing:border-box;
-    padding:0;
-    margin: 0;
+    
     
     
     font-family: "comforta";
@@ -559,7 +557,7 @@ footer{
 
 } 
 
-/****************************************SERVICIOS*******************/
+/****************************************SERVICIOS******************
 .servicios-cards{
     
     color: rgb(62, 92, 245);
@@ -576,7 +574,7 @@ footer{
     justify-content:space-around;
 }
 .card-s{
-    background-color: black;
+    background-color:white;
     border: 2px solid rgb(62, 92, 245)  ;
 
     display:block;
@@ -586,9 +584,6 @@ footer{
     
 }
 
-
-
-
 .icon-s{
     background-color: white;
     border-radius: 70%;
@@ -596,7 +591,7 @@ footer{
     height: 70px;
     padding: 8px;
     margin: 10px ;
-    /*margin-left: 10px;*/
+    
 }
 
 
@@ -605,73 +600,42 @@ footer{
   
 }
 
+*********/
+
+
+
+
+
 /**********************************contactos**********************/
-.body-contac{
-    background-image: url(../IMG/gggggg.jpg);
+.formulario-b{
+    background-image:linear-gradient( rgba(248, 246, 246, 0.589), rgba(236, 236, 243, 0.281) ), url("../IMG/bbbbbb.jpg");
     background-size: cover;
-    background-position: 0 0, 10px 10px;
+    background-position: 0, 0, 10px 10px;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    padding: 25px;
+    
+    height: 110vh;
     
 
+   
+
 }
 
-/*formulario*/
-.flex-container{
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin:50px 30px;    
+
+
+.formulario--b{
+    background-color: rgba(53, 54, 54, 0.541);
+    width: 50%;
+    margin-left: 25%;
+   color: #13315C;
+  
     
 }
+.col-md-4, .col-md-6, .col-md-12{
+    margin: 32px;
 
-.form{
-    background-color: rgb(128, 127, 127);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: 3px solid rgb(62, 92, 245);
-    min-width: 400px;
-    padding: 30px;
-    text-align: center;
-    
 }
-
-
-.form_input {
-    background-color: transparent;
-    color: rgb(255, 251, 251);
-    font-size:1rem ;
-    border: none;
-    
-    width: 100%;
-    margin: 10px;
-    border: none;
-    border-bottom: 3px solid rgb(62, 92, 245) ;
+.button-f{
+    margin: 32px;
 }
-.form_input:focus{
-    /*no me toma el gradient en los form*/
-    background:linear-gradient(to, botton, transparent, #222);
-    color: rgb(233, 233, 233);
-    outline: none;
-    border-bottom:3px solid rgb(130, 240, 111)  ;
-}
-
-
-
-
-.form_s{
-    background-color:rgb(62, 92, 245) ;
-    border-radius: 20px 20px;
-    width: 100%;
-    padding: 10px;
-    margin-left: 10px;
-}
-
-.title--c{
-    color: rgb(62, 92, 245) ;
-    text-align: center;
-    font-size: 3rem;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-/*tampoco me toma los estilos en el textstarea*/
