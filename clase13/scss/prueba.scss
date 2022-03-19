@@ -2,6 +2,16 @@ $fuente: "comforta";
 $fondo:#13315C; 
 $colorLetra: white;
 
+@mixin footer-t($colorLetra , $fondo) {
+    
+    background-color:$fondo;
+    color: $colorLetra;
+    
+    
+    
+}
+
+
 body{
     box-sizing:border-box;
     padding:0;
@@ -120,24 +130,37 @@ img{
 
  .card-s{
      background-color: rgba(196, 196, 211, 0.575);
-     padding: 20px;
+     padding: 15px;
      margin: 25px;
      
-     width:20%;
-     height:20%;
+     width:200px;
+     height:200px;
      border-radius: 30px 32px;
+     transition: all .8s;
+     transition-timing-function:ease-in-out;
      
       
      
     }
     .card-s-a{
-        background-color: rgb(249, 250, 251);
+        background-color: rgb(215, 228, 228);
         color: black;
-        width: 250px;
-        height: 300px;
+        width: 200px;
+        height:200px;
         padding: 15px;
         border-radius: 30px 32px;
+        transition: all .8s;
+        transition-timing-function:ease-in-out;
         
+    }
+    .card-s-a:hover{
+        width: 250px;
+        height: 250px;
+
+    }
+    .card-s:hover{
+        width: 250px;
+        height: 250px;
     }
 
  .icon-s{
@@ -149,6 +172,11 @@ img{
 
 .servicios-p{
     color: $colorLetra;
+   font-size: 0.9rem;
+}
+.servicios-p-a{
+    font-size: 0.9rem
+
 }
 
 
@@ -190,14 +218,73 @@ footer{
 
 
 
+/***********************************************************************/
+/***************************** Donde estamos con scss******************/
 
 
 
+.maps{
+    background-color: $fondo;
+
+    display: grid;
+    grid-template-columns:50% 50%;
+
+}
+.maps img{
+    width: 100%;
+    height: 100%;
+
+    
+}
+.maps ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.maps ol li{
+    padding: 16px;
+    list-style: none;
+    text-align: center;
+    width: 400px;
+    color: $colorLetra;
+    font-size: 1.5rem;
 
 
+    
+}
+.maps-title{
+    font-size: 2.5rem;
+    background-color: $fondo;
+    color: $colorLetra;
+    
+}
+button{
+    background-color:rgb(75, 168, 106);
+    padding: 16px 32px;
+    color: $colorLetra;
+    border: none;
+    border-radius: 8px;
+    transition: all .3s;
+    
+}
 
+button:hover{
+    background-color:rgba(28, 116, 57, 0.822) ;
+    
+}
+.boton{
+    @extend .boton;
+    background-color:rgb(158, 64, 56);
+    
+}
 
-
+.footer-a{
+ @include footer-t(2rem, rgb(39, 64, 110), )
+    
+}
 
 
 
